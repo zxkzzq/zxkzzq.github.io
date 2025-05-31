@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>My GitHub Page</title>
+  <meta charset="UTF-8">
+  <title>人教必修二教学动画</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body { background-color: #f8f9fa; font-family: 'Arial', sans-serif; }
+    .header { background-color: #007bff; color: white; padding: 20px; text-align: center; }
+    .animation-card { margin: 15px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
+    .animation-card video { width: 100%; max-height: 200px; }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is my personal homepage!</p>
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="/">人教必修二</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="#math">数学</a>
+        <a class="nav-link" href="#physics">物理</a>
+        <a class="nav-link" href="#chemistry">化学</a>
+        <a class="nav-link" href="#about">关于</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主页内容 -->
+  <div class="container">
+    <div class="header">
+      <h1>人教必修二教学动画</h1>
+      <p>为高中生提供生动、直观的教学动画资源</p>
+    </div>
+
+    <!-- 动画展示 -->
+    <div class="row" id="math">
+      <h2>数学动画</h2>
+      <div class="col-md-4">
+        <div class="animation-card">
+          <h3>二次函数</h3>
+          <video controls>
+            <source src="animations/math_quadratic.mp4" type="video/mp4">
+          </video>
+          <p>介绍二次函数的图像与性质</p>
+        </div>
+      </div>
+      <!-- 更多动画卡片 -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
