@@ -1,3 +1,4 @@
-remote_theme: mmistakes/minimal-mistakes
 title: 人教必修二教学动画
 description: 高中人教版必修二课程的教学动画资源
+baseurl: ""
+url: "https://zxkzzq.github.io"
