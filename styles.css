@@ -1,0 +1,8 @@
+:root {
+  --primary-color: #007bff; /* 蓝色 */
+  --background-color: #f8f9fa; /* 浅灰 */
+  --text-color: #333;
+}
+.header { background: var(--primary-color); color: white; }
+.animation-card { box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+.animation-card:hover { transform: scale(1.05); }
