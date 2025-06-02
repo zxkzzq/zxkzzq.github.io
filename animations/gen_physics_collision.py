@@ -6,7 +6,7 @@ import matplotlib.animation as animation
 m1 = 1.0  # 物体1的质量
 m2 = 5.0  # 物体2的质量 (修改为不同质量)
 r1 = 0.1  # 物体1的半径
-r2 = 0.2  # 物体2的半径 (修改为更大)
+r2 = 0.3  # 物体2的半径 (再次调大)
 
 # 初始条件
 x1_0 = -0.5  # 物体1的初始x坐标
@@ -113,8 +113,8 @@ for i in range(num_frames):
 
 # 设置绘图
 fig, ax = plt.subplots(figsize=(6, 6))
-ax.set_xlim(-1.5, 1.5)
-ax.set_ylim(-1.5, 1.5)
+ax.set_xlim(-2.0, 2.0) # 调整X轴范围
+ax.set_ylim(-2.0, 2.0) # 调整Y轴范围
 ax.set_aspect('equal', adjustable='box')
 
 circle1 = plt.Circle((x1_history[0], y1_history[0]), r1, fc='blue')
@@ -136,7 +136,7 @@ def animate(i):
 ani = animation.FuncAnimation(fig, animate, frames=num_frames, init_func=init, blit=True, interval=dt*1000)
 
 # 保存动画
-output_path = '/Users/zhengxueke/Desktop/zxkzzq.github.io-main/animations/physics_collision.mp4' # 修改保存路径
+output_path = '/Users/zhengxueke/Desktop/zxkzzq.github.io-main/animations/physics_collision.mp4'
 print(f"正在保存动画到 {output_path}...")
 ani.save(output_path, fps=int(1/dt), writer='ffmpeg')
 print("动画保存完成！")
